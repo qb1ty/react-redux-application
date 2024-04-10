@@ -1,0 +1,28 @@
+.App {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remove_icon_control {
+  position: relative;
+}
+
+.remove_icon {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  color: red;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.remove_icon:hover {
+  transform: scale(1.4);
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
